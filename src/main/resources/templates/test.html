@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/test}" th:object="${parentDto}" method="post">
+        <p>should Create</p>
+        <input type="checkbox" th:field="*{createChild}"/><br/>
+        <p>Childname </p>
+        <input type="text" th:field="*{childDto.name}"/><br/>
+        <button th:text="#{bprocare.atc.save}" name="action" type="submit" value="save" class="btn btn-success"/>
+    </form>
+</body>
+</html>
