@@ -23,9 +23,6 @@ public class ParentDto {
 
     private boolean createChild;
 
-    @NotEmpty(groups = CreateChild.class)
-    private String test;
-
 
     public ChildDto getChildDto() {
         return childDto;
@@ -43,11 +40,4 @@ public class ParentDto {
         this.createChild = createChild;
     }
 
-    public String getTest() {
-        return test;
-    }
-
-    public void setTest(String test) {
-        this.test = test;
-    }
 }
